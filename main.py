@@ -149,3 +149,6 @@ checkbox(list)
 
 button = browser.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div[1]/div/span')
 button.click()
+
+browser.implicitly_wait(10)
+browser.quit()
