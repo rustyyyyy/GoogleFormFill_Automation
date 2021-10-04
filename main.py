@@ -1,5 +1,6 @@
-from selenium import webdriver
 import random 
+import time
+from selenium import webdriver
 
 option = webdriver.ChromeOptions()
 option.add_argument("-incognito")
@@ -14,6 +15,8 @@ def checkbox(list):
     option = random.randint(0,listno)
     checkbox = browser.find_element_by_xpath(list[option])
     checkbox.click()
+    print("\nClicked -> " + str(option)+"\n")
+    time.sleep(0.10)
 
 
 # 1
@@ -150,5 +153,6 @@ checkbox(list)
 button = browser.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div[1]/div/span')
 button.click()
 
-browser.implicitly_wait(10)
+print("\nExiting...")
+time.sleep(5)
 browser.quit()
