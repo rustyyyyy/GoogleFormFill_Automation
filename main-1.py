@@ -6,7 +6,7 @@ option = webdriver.ChromeOptions()
 option.add_argument("-incognito")
 browser = webdriver.Chrome(executable_path='chromedriver', options=option)
 
-browser.get("https://forms.gle/R3F4HtQUhzHqihpt6")
+browser.get("")
 
 # listno -- total element in list
 # option -- random number generated for option
