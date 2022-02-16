@@ -1,7 +1,7 @@
-# GoogleFormFill_Automation
+# Google Form Fill Automation
  
 
-Auto google form fillup python, Selium, chrome web driver
+Auto google form fillup using python, Selium, chrome web driver
 
   
 
